@@ -1,0 +1,10 @@
+body{
+    background-color:rgb(213, 148, 199);
+}
+
+h1{
+    text-align: center;
+    font-style:oblique;
+    background-color: rgb(213, 148, 199);
+    border-radius: 10%;
+}

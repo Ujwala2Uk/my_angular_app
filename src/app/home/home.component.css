@@ -1,0 +1,24 @@
+body{
+    background-color: black;
+}
+
+#img2{
+    height:500px;
+    width: 100px;
+}
+
+h1{
+    text-align: center;
+    background-color: rgb(77, 17, 133);
+    border-color:black;
+    border-radius: 100%;
+    color: aliceblue;
+}
+
+p{
+    text-align: center;
+    background-color: rgb(77, 17, 133);
+    border-color:black;
+    border-radius: 50%;
+    color: rgb(62, 139, 206);
+}

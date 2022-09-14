@@ -8,6 +8,24 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   constructor() { }
+  
+  title = 'Soul Tune';
+  //String interpolation
+
+//Property binding
+  public logo = "assets/images/music4.jpg" ;
+
+// Event binding
+  // search()
+  // {
+  //   alert("Hello");
+  // }
+
+//Two-way binding
+  name="Ujwala";
+ //Laptop
+
+  //Event
 
   ngOnInit(): void {
   }

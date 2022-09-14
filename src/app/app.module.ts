@@ -7,6 +7,7 @@ import { MelodyComponent } from './melody/melody.component';
 import { DanceComponent } from './dance/dance.component';
 import { ClassicalComponent } from './classical/classical.component';
 import { HomeComponent } from './home/home.component';
+import { FindComponent } from './find/find.component';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { HomeComponent } from './home/home.component';
     DanceComponent,
     ClassicalComponent,
     HomeComponent,
+    FindComponent,
    
   ],
   imports: [

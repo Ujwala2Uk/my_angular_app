@@ -1,0 +1,17 @@
+h5{
+    text-align: center;
+    background-color: rgb(222, 199, 243);
+    border-color:black;
+    border-radius: 10%;
+    color: rgb(18, 121, 212);
+}
+h4{
+    text-align: center;
+    background-color: rgb(161, 119, 201);
+    border-color:black;
+    border-radius: 100%;
+    color: rgb(4, 37, 66);
+}
+body{
+    background-color:whitesmoke;
+}

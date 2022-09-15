@@ -9,6 +9,14 @@ import { ClassicalComponent } from './classical/classical.component';
 import { HomeComponent } from './home/home.component';
 import { FindComponent } from './find/find.component';
 import { SearchComponent } from './search/search.component';
+import { MusicComponent } from './music/music.component';
+import { MusicextentionComponent } from './music/musicextention/musicextention.component';
+import { TracksComponent } from './tracks/tracks.component';
+import { AddsComponent } from './adds/adds.component';
+import { PopularComponent } from './popular/popular.component';
+import { TrendingComponent } from './trending/trending.component';
+import { MytopComponent } from './mytop/mytop.component';
+import { FvtComponent } from './fvt/fvt.component';
 
 
 @NgModule({
@@ -20,6 +28,14 @@ import { SearchComponent } from './search/search.component';
     HomeComponent,
     FindComponent,
     SearchComponent,
+    MusicComponent,
+    MusicextentionComponent,
+    TracksComponent,
+    AddsComponent,
+    PopularComponent,
+    TrendingComponent,
+    MytopComponent,
+    FvtComponent,
    
   ],
   imports: [

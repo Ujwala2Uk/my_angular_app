@@ -1,0 +1,11 @@
+.transition{
+    width:100px;
+    height:100px;
+    transition: width 2s,height 2s, transform 1s;
+    text-align-last: right;
+}
+.transition:hover{
+    width:300px;
+    height:200px;
+    size: 500px;
+}

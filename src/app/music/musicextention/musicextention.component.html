@@ -1,0 +1,29 @@
+<body>
+<h1 style="text-align: center;text-shadow: 2px 3px rgb(3, 177, 29);">Soul Tunes</h1>
+<div *ngFor="let song of music" style="border:none;">
+    <div class="row">
+        <!--2nd column-->
+            <div class="card-body col-lg-12" style="">
+                <div class="row" style="margin-top:10px;border-style:solid;border-color:black;border-radius:15px;background-color: rgb(153, 153, 228);">
+                    <div class="col-lg-3">
+                        <!-- Property Binding -->
+                        <img [src]="song.img">
+                    </div>
+                    <div class="col-lg-9" style="margin-top:20px;">
+                        <!--Interpolation Binding-->
+                        <div>
+                            Song Name: {{song.sname | uppercase}}
+                            <span (click)="showproductDetailsToggle()" [ngClass]="toggleContent()"></span>
+                        </div>
+                        <hr>
+                        <div [hidden]="productDetail">
+                            Film Name: {{song.tracks}}
+                            <br>
+                            Singer: {{song.siname}}
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+</body>

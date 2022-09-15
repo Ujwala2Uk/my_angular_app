@@ -1,0 +1,47 @@
+<body>
+    <h1 style="text-align:center;color:rgb(79, 37, 215); text-shadow: 5px 5px rgb(234, 238, 111);">Favorite Songs</h1>
+    <marquee style="color:black; text-shadow:2px 3px rgb(136, 181, 14); font-weight: bold;">Life is a one grand sweet Song...So start the Music</marquee>
+    
+    <div *ngFor="let p of popular" style="border:none;">
+        <div class="row" style="">
+             <!--2nd column-->
+             <div class="col col-lg-5">
+                <!--Property Binding-->
+                <!-- <img [src]="p.img" class="prodimg"> -->
+            </div>
+            <!--1st column--> 
+            <div class="card col-lg-7" style="border:none;">
+                <div class="card-body col-lg-12">
+                    <div class="row" style="margin-top:10px;border-style:solid;border-color:black;border-radius:15px;background-color: rgb(210, 147, 65); ">
+                        <div class="col-lg-6">
+                            <!--Property Binding-->
+                            <img [src]="p.img">
+                        </div>
+                        <div class="col-lg-6" style="margin-top:20px; text-align: left;">
+                            <!--Interpolation Binding-->
+                            <div>
+                                Song Name: {{p.sname | uppercase}}
+                                <hr>
+                                Movie Name: {{p.tracks}}
+                                <br>
+                                Singer: {{p.siname}}
+                                <hr>
+                                <td><audio controls muted>
+                                    <source src="assets/images/Song1.mp3" type="audio/mp3">
+                                </audio></td>
+                            </div>
+                        </div>
+                        
+                       
+                    </div>
+                </div>
+            </div>
+           <!--2nd column-->
+            <div class="col col-lg-5">
+                <!--Property Binding-->
+                <!-- <img [src]="p.img" class="prodimg"> -->
+            </div>
+        </div>
+    </div>
+    </body>
+

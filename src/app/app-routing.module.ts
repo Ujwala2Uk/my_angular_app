@@ -4,11 +4,21 @@ import { MelodyComponent } from './melody/melody.component';
 import { DanceComponent } from './dance/dance.component';
 import { ClassicalComponent } from './classical/classical.component';
 import { HomeComponent } from './home/home.component';
+import { MusicComponent } from './music/music.component';
+import { PopularComponent } from './popular/popular.component';
+import { TrendingComponent } from './trending/trending.component';
+import { MytopComponent } from './mytop/mytop.component';
+import { FvtComponent } from './fvt/fvt.component';
 const routes: Routes = [
   {path:'Home' , component:HomeComponent },
   {path:'Melody' , component:MelodyComponent },
   {path:'Dance' , component:DanceComponent },
   {path:'Classical' , component:ClassicalComponent },
+  {path:'Music', component:MusicComponent},
+  {path:'Popular',component:PopularComponent},
+  {path:'Trending',component:TrendingComponent},
+  {path:'Mytop',component:MytopComponent},
+  {path:'Fvt',component:FvtComponent},
 ];
 
 @NgModule({

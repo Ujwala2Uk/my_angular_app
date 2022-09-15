@@ -1,0 +1,19 @@
+img{
+    height:100px;
+    width:100px;
+    margin-left:20px;
+    margin-top:10px;
+    margin-bottom:10px;
+    border-radius:10px;
+}
+.songimg{
+    height:200px;
+    width:200px;
+    margin-left:40px;
+    margin-top:10px;
+    margin-bottom:10px;
+    border-radius:10px;
+}
+body{
+    background-color: rgb(218, 38, 131);
+}

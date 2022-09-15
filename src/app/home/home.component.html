@@ -199,12 +199,34 @@
     </div>
   </div>
 </div>
-</body>
-<!-- <form class="d-flex">
-  Enter the song name :  <input  #songname type="text" style="border-radius:10px;">
-<button class="btn btn-outline-success" type="submit"  style="border-radius:10px;">Find</button>
 
-</form> -->
+<br>
+
+<div  style="border:50px black; text-align: center;">
+  <button (click)="hide()">List of Recently played songs</button>
+  <ul *ngIf="isVisble">
+  <ul  *ngFor="let sdetails of song_details" [ngSwitch]="sdetails.tracks" type="none" >
+  <li *ngSwitchCase="'My top tracks'" class="text-warning">
+    {{sdetails.tracks}}-->{{sdetails.sname}} singer : {{sdetails.siname}}
+  </li>
+</ul >
+<ul *ngFor="let sdetails of song_details" [ngSwitch]="sdetails.tracks" type="none">
+  <li *ngSwitchCase="'Popular songs'" class="text-info">
+    {{sdetails.tracks}}-->{{sdetails.sname}} singer : {{sdetails.siname}}
+  </li>
+</ul>
+<ul *ngFor="let sdetails of song_details" [ngSwitch]="sdetails.tracks" type="none">
+  <li *ngSwitchCase="'Trending songs'" class="text-secondary">
+    {{sdetails.tracks}}-->{{sdetails.sname}} singer : {{sdetails.siname}}
+  </li>
+</ul>
+</ul>
+</div>
+<br>
+<br>
+<br>
+</body>
+
 
 
 

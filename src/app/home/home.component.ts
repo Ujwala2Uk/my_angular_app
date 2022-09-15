@@ -43,7 +43,57 @@ export class HomeComponent implements OnInit {
       },
     ]
 
-
+    song_details : any[] =[
+     
+      {
+        tracks:"Popular songs",
+        sname: "Kesariya",
+        siname: "Pallavi",
+        sid: 3
+      },
+     
+      {
+        tracks:"Popular songs",
+        sname: "Jai shri ram",
+        siname: "Shankar",
+        sid: 5
+      },
+    
+   
+  
+      {
+        tracks:"Trending songs",
+        sname: "Pagal iravai",
+        siname: "Pranav",
+        sid: 9
+      },
+     
+      {
+        tracks:"Popular songs",
+        sname: "Sojugada",
+        siname: "Ananya",
+        sid: 2
+      },
+  
+    
+      {
+        tracks:"My top tracks",
+        sname: "Zara Zara",
+        siname: "Driithi",
+        sid: 13
+      },
+    
+      {
+        tracks:"My top tracks",
+        sname: "Munjane Manjalli",
+        siname: "Raghu Dixit",
+        sid: 14
+      },
+    
+     
+     
+    ]
+    
 
 
 songentered: string =' '

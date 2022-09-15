@@ -8,6 +8,7 @@ import { DanceComponent } from './dance/dance.component';
 import { ClassicalComponent } from './classical/classical.component';
 import { HomeComponent } from './home/home.component';
 import { FindComponent } from './find/find.component';
+import { SearchComponent } from './search/search.component';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { FindComponent } from './find/find.component';
     ClassicalComponent,
     HomeComponent,
     FindComponent,
+    SearchComponent,
    
   ],
   imports: [

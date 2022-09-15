@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -22,12 +22,41 @@ export class HomeComponent implements OnInit {
   // }
 
 //Two-way binding
-  name="Ujwala";
+  // name="Ujwala";
  //Laptop
 
-  //Event
+    isVisble:boolean =false;
+    hide()
+    {
+      this.isVisble= !this.isVisble
+    }
 
-  ngOnInit(): void {
+    songs:any[ ]=[
+      {
+        popular_songname1:"Popular songs "
+      },
+      {
+        popular_songname1:"Trending songs "
+      },
+      {
+        popular_songname1:"My top tracks"
+      },
+    ]
+
+
+
+
+songentered: string =' '
+
+search_song(song_name1:string): void{
+  if (!song_name1) {
+    this.songentered=' '
+     alert('Please enter the song')
   }
+  this.songentered=song_name1;
+  // alert(song_name1)
+}
+ngOnInit(): void {
+}
 
 }

@@ -1,5 +1,13 @@
 <body>
 <br>
+<div style="text-align:right;">
+ <div style="color:white ;">Enter the song name :  <input  #songname type="text" style="border-radius:10px;">
+<button type="submit" (click) = "search_song(songname.value);songname.value=''">search</button>
+</div>
+
+<app-search [songname]="songentered"></app-search>
+
+</div>
 <!-- String Binding -->
 <h1>"{{title}}"</h1>
 <p>Just feel the music</p>
@@ -31,6 +39,174 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-
+  <br>
  
-</body> 
+  <!-- Cards -->
+
+<div class="card-group">
+  <div class="card text-white bg-info mb-3">
+    <img id="c1_img" src="assets/images/popular1.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title" style="text-align:center">Popular Songs</h5>
+      <table class="table table-borderless" >
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">song Name</th>
+            <th scope="col">Singer</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Ohm shivam</td>
+            <td>SPB</td>
+           
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Sojugada</td>
+            <td>Ananya</td>
+           
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Kesariya</td>
+            <td>Pallavi</td>
+           
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Calmdown</td>
+            <td>Shyam</td>
+            
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>Jai shri ram</td>
+            <td>Shankar</td>
+         
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="card-footer">
+      <small class="text">Feel the music</small>
+    </div>
+  </div>
+  <div class="card text-white bg-secondary mb-3">
+    <img id="c1_img" src="assets/images/trend1.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title" style="text-align:center">Trending songs</h5>
+      <table class="table table-borderless" >
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">song Name</th>
+            <th scope="col">Singer</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mehabooba</td>
+            <td>Ravi</td>
+           
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Fitoor</td>
+            <td>Arijith</td>
+           
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Ninne thanaka</td>
+            <td>Sanjith</td>
+           
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Pagal iravai</td>
+            <td>Pranav</td>
+            
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>Jagave neenu</td>
+            <td>Arijith</td>
+         
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="card-footer">
+      <small class="text">Feel the music</small>
+    </div>
+  </div>
+  <div class="card text-white bg-warning mb-3">
+    <img id="c1_img" src="assets/images/my1.jpg" class="card-img-top" alt="...">
+  
+    <div class="card-body">
+      <h5 class="card-title" style="text-align:center;font-weight:bold;">My top tracks</h5>
+      <table class="table table-borderless" >
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">song Name</th>
+            <th scope="col">Singer</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Arabic kuthu</td>
+            <td>Anirudh</td>
+           
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Darshana</td>
+            <td>Hesham</td>
+           
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Zara Zara</td>
+            <td>Driithi</td>
+           
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Munjane Manjalli</td>
+            <td> Raghu Dixit</td>
+            
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>Patashala</td>
+            <td>Vijay</td>
+         
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="card-footer">
+      <small class="text">Feel the music</small>
+    </div>
+  </div>
+</div>
+</body>
+<!-- <form class="d-flex">
+  Enter the song name :  <input  #songname type="text" style="border-radius:10px;">
+<button class="btn btn-outline-success" type="submit"  style="border-radius:10px;">Find</button>
+
+</form> -->
+
+
+
+
+

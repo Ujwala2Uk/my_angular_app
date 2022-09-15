@@ -22,3 +22,9 @@ p{
     border-radius: 50%;
     color: rgb(62, 139, 206);
 }
+#c1_img{
+    height: 300px; 
+    border-radius: 100%;
+    background-color: blueviolet;
+    border: 100%;
+}

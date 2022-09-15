@@ -25,7 +25,11 @@ export class FindComponent implements OnInit {
     return this._productname;
   }
 
+  
+
+
+
   ngOnInit(): void {
   }
-
+ 
 }

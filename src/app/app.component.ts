@@ -36,6 +36,8 @@ export class AppComponent {
     this.productentered=product_name; 
     console.log(product_name)
   }
+
+  
   ngOnInit(): void {
   }
 

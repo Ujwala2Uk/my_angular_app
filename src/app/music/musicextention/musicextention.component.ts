@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 import * as sn from '../music.json'
 
 @Component({
@@ -9,12 +9,12 @@ import * as sn from '../music.json'
 export class MusicextentionComponent implements OnInit {
 
   constructor() { }
-
+  @Input()song:any
   ngOnInit(): void {
   }
 
   music : any =(sn as any).default;
-  productDetail=false;
+  productDetail=true;
   //Event to perform the toggle effect
   showproductDetailsToggle()
   {

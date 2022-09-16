@@ -1,4 +1,8 @@
 <body>
+    
+    <div>    
+        <h1 style="text-align: center;text-shadow: 2px 3px rgb(3, 177, 29);background-color: rgb(139, 8, 76); border-radius: 10%;">Soul Tunes</h1>
+        </div>    
 <div style="margin-top: 30px; border: 100%;">
     <div class="row">
         <!--1st column-->
@@ -9,8 +13,10 @@
         </div>
 
         <!--2nd column-->
+        
         <div class="card col-lg-6" style="border:none;margin-top: 30px;">
-            <app-musicextention></app-musicextention>
+            <!-- <app-musicextention></app-musicextention> -->
+            <app-musicextention [song]="productItem" *ngFor="let productItem of all"></app-musicextention>
           
         </div>
         <!--3rd column-->
@@ -21,3 +27,4 @@
     </div>
 </div>
 </body>
+

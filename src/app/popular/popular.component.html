@@ -1,13 +1,25 @@
 <body>
+<div>
 <h1 style="text-align:center;color:darkred;text-shadow: 5px 5px lightseagreen">Popular Songs</h1>
-<marquee style="color:black; text-shadow:2px 3px blueviolet; font-weight: bold;">Life is a one grand sweet Song...So start the Music</marquee>
+<h5 style="color:black; text-shadow:2px 3px blueviolet; font-weight: bold; text-align: center;">Life is a one grand sweet Song...So start the Music</h5>
+<hr>
+<div class="row " >
+<marquee>   <app-allsong></app-allsong></marquee> 
+</div>
+</div>
 
+<hr>
 <div *ngFor="let p of popular" style="border:none;">
-    <div class="row" style="">
+    <div class="row " style="background-color: black;">
+        <div class="col col-lg-2">
+            <!--Property Binding-->
+            <!-- <img [src]="p.img" class="prodimg"> -->
+            <!-- <app-allsong></app-allsong> -->
+        </div>
         <!--1st column--> 
-        <div class="card col-lg-7" style="border:none;">
-            <div class="card-body col-lg-12">
-                <div class="row" style="margin-top:10px;border-style:solid;border-color:black;border-radius:15px;background-color: aquamarine; ">
+        <div class="card col-lg-8" style="border:none; background-color: black;">
+            <div class="card-body col-lg-12" style="background-color: black;">
+                <div class="row" style="margin-top:10px;border-style:solid;border-color:rgb(207, 106, 18);border-radius:15px;background-color: aquamarine; ">
                     <div class="col-lg-6">
                         <!--Property Binding-->
                         <img [src]="p.img">
@@ -29,11 +41,14 @@
                 </div>
             </div>
         </div>
+       
        <!--2nd column-->
-        <div class="col col-lg-5">
+        <!-- <div class="col col-lg-5"> -->
             <!--Property Binding-->
             <!-- <img [src]="p.img" class="prodimg"> -->
-        </div>
+            <!-- <app-allsong></app-allsong> -->
+        <!-- </div> -->
     </div>
 </div>
+
 </body>

@@ -17,6 +17,10 @@ import { PopularComponent } from './popular/popular.component';
 import { TrendingComponent } from './trending/trending.component';
 import { MytopComponent } from './mytop/mytop.component';
 import { FvtComponent } from './fvt/fvt.component';
+import { AllsongComponent } from './allsong/allsong.component';
+import { CountComponent } from './count/count.component';
+import { CountchildComponent } from './count/countchild/countchild.component';
+
 
 
 @NgModule({
@@ -36,6 +40,10 @@ import { FvtComponent } from './fvt/fvt.component';
     TrendingComponent,
     MytopComponent,
     FvtComponent,
+    AllsongComponent,
+    CountComponent,
+    CountchildComponent,
+  
    
   ],
   imports: [

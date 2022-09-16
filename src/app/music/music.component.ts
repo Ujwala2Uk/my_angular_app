@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 import * as songdetails from '../data/product.json';
 @Component({
   selector: 'app-music',

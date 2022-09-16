@@ -1,11 +1,16 @@
 <body>
-    <h1 style="text-align:center;color:rgb(8, 125, 43); text-shadow: 5px 5px lightcoral;">My Top Tracks</h1>
+    <h1 style="text-align:center;color:rgb(3, 21, 9); text-shadow: 5px 5px lightcoral;">My Top Tracks</h1>
     <marquee style="color:black; text-shadow:2px 3px rgb(136, 181, 14); font-weight: bold;">Life is a one grand sweet Song...So start the Music</marquee>
-    
+    <hr>
     <div *ngFor="let p of popular" style="border:none;">
         <div class="row" style="">
             <!--1st column--> 
-            <div class="card col-lg-7" style="border:none;">
+            <div class="col col-lg-2">
+                <!--Property Binding-->
+                <!-- <img [src]="p.img" class="prodimg"> -->
+                <!-- <app-allsong></app-allsong> -->
+            </div>
+            <div class="card col-lg-8" style="border:none;background-color: darkgreen;">
                 <div class="card-body col-lg-12">
                     <div class="row" style="margin-top:10px;border-style:solid;border-color:black;border-radius:15px;background-color: lightpink; ">
                         
@@ -37,4 +42,5 @@
             </div>
         </div>
     </div>
+    <hr>
     </body>

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as populardetails from './popular.json'
+import * as populardetails from './popular.json';
+// import * as productsong from '../data/product.json'
 @Component({
   selector: 'app-popular',
   templateUrl: './popular.component.html',
@@ -12,5 +13,6 @@ export class PopularComponent implements OnInit {
   ngOnInit(): void {
   }
 
-popular: any=(populardetails as any ).default
+popular: any=(populardetails as any ).default;
+// psongs : any=(productsong as any). default
 }

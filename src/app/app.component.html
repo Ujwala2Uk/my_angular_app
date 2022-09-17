@@ -1,3 +1,5 @@
+<!-- For Exit -->
+
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div  class="modal-content">
@@ -17,6 +19,79 @@
   </div>
 </div>
 
+<!-- For Registarion -->
+<div class="modal fade" id="reg1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div  class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Registation Details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="">
+          <fieldset class="reg">    
+              <label>Username</label><br>
+              <input type="text" name="fname" required><br>
+              <label>Enter the Gmail address</label><br>
+              <input type="email" name="email" required><br>
+              <label>Enter the Password</label><br>
+              <input type="password" name="password" required><br>
+              <label>Re-enter the Password</label><br>
+              <input type="password" name="password" required><br>
+              <br>
+              <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Submit</button>
+          </fieldset>
+        </form>
+      </div>  
+    </div>
+  </div>
+</div>
+
+<!-- For sign in -->
+<div class="modal fade" id="reg2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Sign in</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="">
+          <fieldset class="reg">     
+              <label>Enter the valid Username</label><br>
+              <input type="text" name="fname" required><br>
+              <label>Enter the valid Password</label><br>
+              <input type="password" name="password" required><br>
+              <br>
+              <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Login</button>
+          </fieldset>
+        </form>
+      </div>  
+    </div>
+  </div>
+</div>
+
+<!-- For Sign out -->
+<div class="modal fade" id="reg3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="modal-header">
+          <h5 class="modal-title">Sign out</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Are u sure!!!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+          <button type="button" class="btn btn-primary"data-bs-dismiss="modal">Yes</button>
+        </div>
+      </div>  
+    </div>
+  </div>
+</div>
+
 
 <!-- navbar -->
 <!-- Routing in nav bar -->
@@ -30,7 +105,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active " aria-current="page" routerLink="Music">Music</a>
+            <a class="nav-link active " aria-current="page" routerLink="Music" >Music</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active"  routerLink="Melody">Melody</a>
@@ -46,9 +121,15 @@
              Others
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a id="#but1" class="dropdown-item" href="">Registration</a></li>
-              <li><a id="#but2" class="dropdown-item" href="">Sign in</a></li>
-              <li><a id="#but3" class="dropdown-item" href="">Sign out</a></li>
+              <button id="reg" type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#reg1">
+                Registration
+              </button>
+              <button id="reg" type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#reg2">
+                Sign in
+              </button>
+              <button id="reg" type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#reg3">
+                Sign out
+              </button>
             </ul>
           </li>
           

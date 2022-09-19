@@ -62,16 +62,25 @@
            </tr>
          </tbody>
        </table>
-       <div class="container-fluid">
-        <button id="reg" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-         Exit
-        </button>
-      </div>
      </div>
    </div>
- 
- 
-   
- </div>
- 
+</div>
+<div style="color:black; text-align:center;">
+  <button  type=" button btn btn-success" (click)="hide()" style="text-align:center;">Contact details</button>
+  <ul *ngIf="isVisble">
+  <div class="row" *ngFor= "let c of contact" style="text-align:center;">
+    <ul type="none" style="background-color:darkgreen;border: black;border-radius: 50%;font-size: large;">
+      <br>
+      <li>{{c.cname}} : {{c.cnumber}} ({{c.cemail}})</li>
+    </ul>
+  </div>
+</ul>
+</div> 
+<br>
+<div class="container-fluid" style="text-align: center;">
+    <button id="reg" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+     Exit
+    </button>
+</div>
+
  </body>

@@ -55,7 +55,7 @@ song_details : any[] =[
   },
   {
     tracks:"Trending songs",
-    sname: " Mehabooba",
+    sname: "Mehabooba",
     siname: "Ravi",
     sid: 1
   },

@@ -20,6 +20,7 @@ import { FvtComponent } from './fvt/fvt.component';
 import { AllsongComponent } from './allsong/allsong.component';
 import { CountComponent } from './count/count.component';
 import { CountchildComponent } from './count/countchild/countchild.component';
+import { RegisterComponent } from './register/register.component';
 
 
 
@@ -43,6 +44,7 @@ import { CountchildComponent } from './count/countchild/countchild.component';
     AllsongComponent,
     CountComponent,
     CountchildComponent,
+    RegisterComponent,
   
    
   ],

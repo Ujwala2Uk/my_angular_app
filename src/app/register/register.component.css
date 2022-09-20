@@ -1,0 +1,10 @@
+.reg{
+    margin-left:300px;
+    margin-right:300px;
+    background-color: rgb(116, 203, 241);
+    color:black;
+    border-radius: 15px;
+    border-color: rgb(22, 20, 20);
+    box-shadow: 10px 20px 5px rgb(253, 89, 114);
+    
+  } 

@@ -21,7 +21,12 @@ import { AllsongComponent } from './allsong/allsong.component';
 import { CountComponent } from './count/count.component';
 import { CountchildComponent } from './count/countchild/countchild.component';
 import { RegisterComponent } from './register/register.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
+// import { map } from 'rxjs';
+import { AdminComponent } from './admin/admin.component';
 
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -45,6 +50,8 @@ import { RegisterComponent } from './register/register.component';
     CountComponent,
     CountchildComponent,
     RegisterComponent,
+    AdminComponent,
+    LoginComponent,
   
    
   ],
@@ -52,6 +59,8 @@ import { RegisterComponent } from './register/register.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -27,6 +27,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AdminComponent } from './admin/admin.component';
 
 import { LoginComponent } from './login/login.component';
+import { StartloginComponent } from './startlogin/startlogin.component';
+import { StartregisterComponent } from './startregister/startregister.component';
 
 
 @NgModule({
@@ -52,6 +54,8 @@ import { LoginComponent } from './login/login.component';
     RegisterComponent,
     AdminComponent,
     LoginComponent,
+    StartloginComponent,
+    StartregisterComponent,
   
    
   ],

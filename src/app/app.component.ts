@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { UserService } from './user.service';
 
 @Component({
   selector: 'app-root',
@@ -22,7 +23,9 @@ export class AppComponent {
   // name="Ujwala";
  //Laptop
 
-  //Event
+
+  constructor(private authService:UserService) { }
+  auth:boolean=false;
  
 
  //parent child component method 
@@ -39,6 +42,13 @@ export class AppComponent {
 
   
   ngOnInit(): void {
+    this.authService.authSubject.subscribe(
+      data => 
+      {
+        console.log('auth inside nav component: ' + data);
+        this.auth = data;
+      }
+    );
   }
 
 }

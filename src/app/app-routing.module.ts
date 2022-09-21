@@ -12,6 +12,8 @@ import { MytopComponent } from './mytop/mytop.component';
 import { FvtComponent } from './fvt/fvt.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
+import { StartregisterComponent } from './startregister/startregister.component';
+import { StartloginComponent } from './startlogin/startlogin.component';
 const routes: Routes = [
   {path:'Home' , component:HomeComponent },
   {path:'Melody' , component:MelodyComponent },
@@ -25,6 +27,8 @@ const routes: Routes = [
   {path:'Fvt',component:FvtComponent},
   {path:'Register', component:RegisterComponent},
   {path:'Login', component:LoginComponent},
+  {path:'Startlogin', component:StartloginComponent},
+  {path:'Startregister', component:StartregisterComponent},
 ];
 
 @NgModule({

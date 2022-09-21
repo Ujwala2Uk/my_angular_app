@@ -105,23 +105,26 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page"  routerLink="Melody">Melody</a>
+            <a class="nav-link active" aria-current="page" *ngIf="auth" routerLink="Melody">Melody</a>
           </li>
           
           <li class="nav-item">
-            <a class="nav-link active " routerLink="Dance">Dance</a>
+            <a class="nav-link active " *ngIf="auth" routerLink="Dance">Dance</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active " routerLink="Classical">Classical</a>
+            <a class="nav-link active " *ngIf="auth" routerLink="Classical">Classical</a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link active "*ngIf="auth" routerLink="Music" >Music</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active " routerLink="Music" >Music</a>
+            <a class="nav-link active "*ngIf="auth" routerLink="Admin" >Admin</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active " routerLink="Admin" >Admin</a>
+            <a class="nav-link" routerLink="Startregister" *ngIf="!auth">Register</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" *ngIf="auth">
              Others
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -136,7 +139,7 @@
               </button>
             </ul>
           </li>
-          
+          <a class="btn btn-outline-warning" type="submit" style="border-radius:10px;color:black;" routerLink="Startlogin">Login</a>
           
         </ul>
         <form class="d-flex">

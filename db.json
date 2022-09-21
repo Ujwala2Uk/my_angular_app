@@ -116,6 +116,57 @@
       "siname": "gvhbjnm"
     }
   ],
+  "users": [
+    {
+      "username": "Ujwala",
+      "useremail": "Ujwala@gmail.com",
+      "password": "Ujwala@123",
+      "mobile": "1234567890",
+      "id": 1
+    },
+    {
+      "username": "Admin",
+      "useremail": "admin@gmail.com",
+      "password": "admin@123",
+      "mobile": "9898989898",
+      "id": 2
+    },
+    {
+      "username": "Shreya",
+      "useremail": "shreya@gmail.com",
+      "password": "Shreya123",
+      "mobile": "9876543210",
+      "id": 3
+    },
+    {
+      "username": "dhuhfud",
+      "useremail": "ujwalauk2019@gmail.com",
+      "password": "",
+      "mobile": "",
+      "id": 4
+    },
+    {
+      "username": "dayzgfycdhsg",
+      "useremail": "roopa@gmail.com",
+      "password": "",
+      "mobile": "",
+      "id": 5
+    },
+    {
+      "username": "vdhsfhydg",
+      "useremail": "sahdsb hnaf",
+      "password": "cdvcfxbv",
+      "mobile": "",
+      "id": 6
+    },
+    {
+      "username": "Lavanya",
+      "useremail": "lavanya@gmail.com",
+      "password": "",
+      "mobile": "",
+      "id": 7
+    }
+  ],
   "posts": [
     {
       "id": 3,

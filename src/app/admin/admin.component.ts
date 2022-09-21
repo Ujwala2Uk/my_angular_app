@@ -3,6 +3,7 @@ import { FormBuilder,FormGroup, FormControl } from '@angular/forms';
 import { SongModel } from '../song-model';
 import { SongapiService } from '../songapi.service';
 import { Router } from '@angular/router';
+import { Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-admin',
@@ -16,18 +17,22 @@ export class AdminComponent implements OnInit {
   productData!: any;
   showAdd!: boolean;
   showUpdate!: boolean;
+  // songname: FormControl | any;
+  // singername: FormControl | any;
+  // songtracks : FormControl|any;
  
-  constructor(private formbuilder: FormBuilder, private api:SongapiService, private router: Router) { }
+  constructor(private formbuilder: FormBuilder, private api:SongapiService,) { }
 
-  myForm: FormGroup | any;
-  sname: FormControl | any;
-  siname: FormControl | any;
-  tracks : FormControl|any;
+  
   ngOnInit(): void {
-
-
-
-    
+  //   this.songname = new FormControl('', [Validators.required,Validators.pattern('[A-Za-z]*'), Validators.minLength(6), Validators.maxLength(16)]);
+  //   this.singername = new FormControl('', [Validators.required,Validators.pattern('[A-Za-z]*'), Validators.minLength(6), Validators.maxLength(16)]);
+  //   this.songtracks = new FormControl('', [Validators.required,Validators.pattern('[A-Za-z0-9]*'), Validators.minLength(6), Validators.maxLength(16)]);
+  //   this.formValue = new FormGroup({
+  //   'sname': this.songname,
+  //   'siname': this.singername,
+  //   'tracks': this.songtracks,
+  // })
     this.formValue = this.formbuilder.group({
       // id:[''],
       sname:[''],
@@ -74,7 +79,7 @@ export class AdminComponent implements OnInit {
   deleteProducts(product: any){
     this.api.deleteProducts(product.id).subscribe(res=>{
       
-      alert("The Product deleted!")
+      alert("The Song deleted!")
       this.getProducts();
     }), 
     ({
@@ -100,7 +105,7 @@ export class AdminComponent implements OnInit {
     this.productModelObj.siname = this.formValue.value.siname;
     this.productModelObj.tracks = this.formValue.value.tracks;
     this.api.updateProducts(this.productModelObj, this.productModelObj.id).subscribe(res=>{
-      alert("The product updated!")
+      alert("The Song updated!")
 
       let ref = document.getElementById('cancel')
       ref?.click();

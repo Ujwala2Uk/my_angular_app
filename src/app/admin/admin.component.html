@@ -1,5 +1,11 @@
-
-<nav class="navbar navbar-dark bg-dark">
+<body>
+<br>
+<h3></h3>
+<br>
+<div class="row">
+<div class="col col-lg-2"></div>
+<div class="col col-lg-8">
+  <nav class="navbar navbar-dark bg-dark">
     <div class="container-fluid">
       <h1 style="color: aliceblue; font-size: 20px;">SONGS DETAILS</h1>
       <div class="d-flex">
@@ -10,10 +16,11 @@
       </div>
     </div>
   </nav>
-  <table class="table table-hover">
+  <div class="prodimg">
+  <table class="table table-hover table-info table-striped">
     <thead>
-      <tr>
-        <th scope="col">Song ID</th>
+      <tr style="color:darkmagenta">
+        <th scope="col" >Song ID</th>
         <th scope="col">Song Name</th>
         <th scope="col">Singer Name</th>
         <th scope="col">Film Name</th>
@@ -27,7 +34,7 @@
         <td>{{product.siname}}</td>
         <td>{{product.tracks}}</td>
         <td>
-          <button (click)="onEdit(product)" type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal7">
+          <button (click)="onEdit(product)" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal7">
             Edit
           </button>&nbsp;
           <button (click)="deleteProducts(product)" class="btn btn-danger">Delete</button>
@@ -35,8 +42,13 @@
       </tr>
     </tbody>
   </table>
-  
-  
+</div>
+</div>  
+<div class="col col-lg-2"></div>
+</div>
+
+
+
   <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -45,15 +57,24 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <form [formGroup]="formValue">
+          
+          <form [formGroup]="formValue" >
             <!-- <div class="mb-3">
                 <label class="form-label">Song ID</label>
                 <input type="sid" class="form-control" formControlName="sid">
               </div> -->
+          <div class="form-group">
             <div class="mb-3">
               <label class="form-label">Song Name</label>
-              <input type="sname" class="form-control" formControlName="sname">
+              <input type="text" class="form-control" formControlName="sname" >
+              <!-- <span class="invalid-feedback">
+                <strong *ngIf="songname.errors?.required">Name is Required</strong>
+                <strong *ngIf="songname.errors?.pattern">Only Alphabets allowed(A-Z and a-z)</strong>
+                <strong *ngIf="songname.errors?.minlength">Min length is 6 characters</strong>
+                <strong *ngIf="songname.errors?.maxlength">Max length is 16 characters</strong>
+            </span> -->
             </div>
+          </div>
             <div class="mb-3">
               <label class="form-label">Singer</label>
               <input type="siname" class="form-control" formControlName="siname">
@@ -72,3 +93,4 @@
       </div>
     </div>
   </div>
+</body>

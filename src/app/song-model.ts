@@ -1,5 +1,5 @@
 export class SongModel {
-    sid:number = 0;
+    id:number = 0;
     tracks:string = '';
     sname: string = '';
     siname: string = '';

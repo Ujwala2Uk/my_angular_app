@@ -1,11 +1,11 @@
-<p>admin works!</p>
+
 <nav class="navbar navbar-dark bg-dark">
     <div class="container-fluid">
-      <h1 style="color: aliceblue; font-size: 20px;">PRODUCTS DETAILS</h1>
+      <h1 style="color: aliceblue; font-size: 20px;">SONGS DETAILS</h1>
       <div class="d-flex">
         
         <button (click)="clickAddProduct()" type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal7">
-          <i class="fa-solid fa-plus"></i>
+          Add Songs
         </button>
       </div>
     </div>
@@ -22,15 +22,15 @@
     </thead>
     <tbody>
       <tr *ngFor="let product of productData">
-        <td>{{product.sid}}</td>
+        <td>{{product.id}}</td>
         <td>{{product.sname}}</td>
         <td>{{product.siname}}</td>
         <td>{{product.tracks}}</td>
         <td>
-          <button (click)="onEdit(product)" type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            <i class="fa-solid fa-pen-to-square"></i>
+          <button (click)="onEdit(product)" type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal7">
+            Edit
           </button>&nbsp;
-          <button (click)="deleteProducts(product)" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+          <button (click)="deleteProducts(product)" class="btn btn-danger">Delete</button>
         </td>
       </tr>
     </tbody>

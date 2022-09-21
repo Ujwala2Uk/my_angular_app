@@ -20,14 +20,14 @@ export class SongapiService {
     }))
   }
 
-  updateProducts(data:any, sid:number){
-    return this.http.put<any>(" http://localhost:3000/songs"+ sid, data).pipe(map((res:any)=>{
+  updateProducts(data:any, id:number){
+    return this.http.put<any>(" http://localhost:3000/songs/" + id, data).pipe(map((res:any)=>{
       return res;
     }))
   }
 
-  deleteProducts(sid:number){
-    return this.http.delete<any>(" http://localhost:3000/songs"+ sid).pipe(map((res:any)=>{
+  deleteProducts(id:number){
+    return this.http.delete<any>(" http://localhost:3000/songs/" + id).pipe(map((res:any)=>{
       return res;
     }))
   }

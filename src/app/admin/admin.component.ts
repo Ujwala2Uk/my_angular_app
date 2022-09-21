@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder,FormGroup } from '@angular/forms';
+import { FormBuilder,FormGroup, FormControl } from '@angular/forms';
 import { SongModel } from '../song-model';
 import { SongapiService } from '../songapi.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-admin',
@@ -16,11 +17,19 @@ export class AdminComponent implements OnInit {
   showAdd!: boolean;
   showUpdate!: boolean;
  
-  constructor(private formbuilder: FormBuilder, private api:SongapiService) { }
+  constructor(private formbuilder: FormBuilder, private api:SongapiService, private router: Router) { }
 
+  myForm: FormGroup | any;
+  sname: FormControl | any;
+  siname: FormControl | any;
+  tracks : FormControl|any;
   ngOnInit(): void {
+
+
+
+    
     this.formValue = this.formbuilder.group({
-      sid:[''],
+      // id:[''],
       sname:[''],
       siname:[''],
       tracks:['']
@@ -35,7 +44,7 @@ export class AdminComponent implements OnInit {
   }
 
   postProductDetails(){
-    this.productModelObj.sid = this.formValue.value.sid;
+    // this.productModelObj.sid = this.formValue.value.sid;
     
     this.productModelObj.sname = this.formValue.value.sname;
     this.productModelObj.siname = this.formValue.value.siname;
@@ -43,7 +52,7 @@ export class AdminComponent implements OnInit {
 
     this.api.postProducts(this.productModelObj).subscribe(res=>{
       console.log(res);
-      alert("New product added successfully!")
+      alert("New Song added successfully!")
       let ref = document.getElementById('cancel')
       ref?.click();
       this.formValue.reset();
@@ -63,7 +72,7 @@ export class AdminComponent implements OnInit {
   }
 
   deleteProducts(product: any){
-    this.api.deleteProducts(product.sid).subscribe(res=>{
+    this.api.deleteProducts(product.id).subscribe(res=>{
       
       alert("The Product deleted!")
       this.getProducts();
@@ -76,8 +85,8 @@ export class AdminComponent implements OnInit {
   onEdit(product: any){
     this.showAdd = false;
     this.showUpdate = true;
-    this.productModelObj.sid = product.sid;
-    this.formValue.controls['sid'].setValue(product.sid);
+    this.productModelObj.id = product.id;
+    // this.formValue.controls['sid'].setValue(product.sid);
     
     this.formValue.controls['sname'].setValue(product.sname);
     this.formValue.controls['siname'].setValue(product.siname);
@@ -85,12 +94,12 @@ export class AdminComponent implements OnInit {
   }
 
   updateProductDetails(){
-    this.productModelObj.sid = this.formValue.value.sid;
+    // this.productModelObj.sid = this.formValue.value.sid;
     
     this.productModelObj.sname = this.formValue.value.sname;
     this.productModelObj.siname = this.formValue.value.siname;
     this.productModelObj.tracks = this.formValue.value.tracks;
-    this.api.updateProducts(this.productModelObj, this.productModelObj.sid).subscribe(res=>{
+    this.api.updateProducts(this.productModelObj, this.productModelObj.id).subscribe(res=>{
       alert("The product updated!")
 
       let ref = document.getElementById('cancel')

@@ -139,11 +139,25 @@
       "id": 3
     },
     {
-      "username": "Lavanya",
-      "useremail": "lavanya@gmail.com",
-      "password": "",
-      "mobile": "",
+      "username": "Umesha",
+      "useremail": "umesha@gmail.com",
+      "password": "umesha123",
+      "mobile": "1234567789",
       "id": 4
+    },
+    {
+      "username": "Roopa",
+      "useremail": "roopa@gmail.com",
+      "password": "roopa123",
+      "mobile": "3432123578",
+      "id": 5
+    },
+    {
+      "username": "ujwala@gmail.com",
+      "useremail": "qEWRFTGH",
+      "password": "ujwala123",
+      "mobile": "dfvgbh",
+      "id": 6
     }
   ],
   "posts": [

@@ -26,7 +26,7 @@ export class StartregisterComponent implements OnInit {
       username: ['', Validators.required, Validators.pattern('[A-Za-z]*'), Validators.minLength(6), Validators.maxLength(16)],
       useremail: ['', Validators.required],
       password: ['', Validators.required, Validators.pattern('[A-Za-z0-9]*'), Validators.minLength(6), Validators.maxLength(14)],
-      mobile: ['', Validators.required, Validators.pattern('[0-9]*')]
+      mobile: ['', Validators.required]
     });
   }
 

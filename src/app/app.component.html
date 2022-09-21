@@ -121,8 +121,8 @@
             <a class="nav-link active "*ngIf="auth" routerLink="Admin" >Admin</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="Startregister" *ngIf="!auth">Register</a>
-          </li>
+          <a class="nav-link" routerLink="Startregister" *ngIf="!auth">Register</a>
+        </li>
           <li class="nav-item dropdown">
             <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" *ngIf="auth">
              Others
@@ -139,7 +139,7 @@
               </button>
             </ul>
           </li>
-          <a class="btn btn-outline-warning" type="submit" style="border-radius:10px;color:black;" routerLink="Startlogin">Login</a>
+          
           
         </ul>
         <form class="d-flex">
@@ -147,6 +147,7 @@
           <input class="form-control me-2" #productname type="search" placeholder="Fvt name" aria-label="Search">
           <button class="btn btn-outline-success" type="submit" (click)="search_product(productname.value);productname.value=''" style="border-radius:10px;">Find</button>
         </form>
+        <a class="btn btn-outline-success" type="submit" style="border-radius:10px;color:black;" routerLink="Startlogin"*ngIf="auth">Logout</a>
       </div>
     </div>
   </nav>

@@ -165,6 +165,13 @@
       "password": "lavanya123",
       "mobile": "12345566773",
       "id": 9
+    },
+    {
+      "username": "Radika",
+      "useremail": "radika@gmail.com",
+      "password": "radika123",
+      "mobile": "1234567890",
+      "id": 10
     }
   ],
   "cart": [

@@ -143,6 +143,9 @@
           
         </ul>
         <form class="d-flex">
+          <button routerLink='CartItems' style="height:5px;border:none;" *ngIf="auth">
+            <span class="fa-solid fa-download" style="font-size:16px;color:white"><sup class="text-warning" style="font-size:10px;margin-left: 3px;;">{{cartCount}}</sup></span>
+          </button>
           <!-- parent child component method  -->
           <input class="form-control me-2" #productname type="search" placeholder="Fvt name" aria-label="Search">
           <button class="btn btn-outline-success" type="submit" (click)="search_product(productname.value);productname.value=''" style="border-radius:10px;">Find</button>

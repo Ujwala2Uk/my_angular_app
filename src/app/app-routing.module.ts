@@ -13,7 +13,9 @@ import { FvtComponent } from './fvt/fvt.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { StartregisterComponent } from './startregister/startregister.component';
-import { StartloginComponent } from './startlogin/startlogin.component';
+import { StartloginComponent } from './startlogin/startlogin.component'
+import { CartItemsComponent } from './cart-items/cart-items.component';
+
 const routes: Routes = [
   {path:'Home' , component:HomeComponent },
   {path:'Melody' , component:MelodyComponent },
@@ -29,6 +31,7 @@ const routes: Routes = [
   {path:'Login', component:LoginComponent},
   {path:'Startlogin', component:StartloginComponent},
   {path:'Startregister', component:StartregisterComponent},
+  {path:'CartItems',component:CartItemsComponent},
 ];
 
 @NgModule({

@@ -29,6 +29,7 @@ import { AdminComponent } from './admin/admin.component';
 import { LoginComponent } from './login/login.component';
 import { StartloginComponent } from './startlogin/startlogin.component';
 import { StartregisterComponent } from './startregister/startregister.component';
+import { CartItemsComponent } from './cart-items/cart-items.component';
 
 
 @NgModule({
@@ -56,6 +57,7 @@ import { StartregisterComponent } from './startregister/startregister.component'
     LoginComponent,
     StartloginComponent,
     StartregisterComponent,
+    CartItemsComponent,
   
    
   ],

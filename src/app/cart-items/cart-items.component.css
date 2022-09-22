@@ -1,5 +1,11 @@
-
 body{
 	
 	background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+}
+img{
+    height:100px;
+    width:100px;
+}
+h3{
+    font-size: 14px;
 }

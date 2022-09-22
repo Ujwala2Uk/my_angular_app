@@ -4,7 +4,7 @@
     <div style="background-color: rgb(241, 155, 200);">
     <div class="row" >
         <!--2nd column-->
-            <div class="card-body col-lg-12" style="background-color: rgb(241, 155, 200);">
+            <div class="card-body col-lg-12" style="background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);">
                 <div class="row" style="margin-top:10px;border-style:solid;border-color:black;border-radius:15px;background-color: rgb(153, 153, 228);">
                     <div class="col-lg-3">
                         <!-- Property Binding -->
@@ -22,6 +22,10 @@
                             <br>
                             Singer: {{song.siname}}
                         </div>
+                        <!-- <br><input type="number" name="quantity" [(ngModel)]="quantity" style="width:50px;border-radius:10px;" min="1" max="25"> -->
+                        
+                        <br>
+                        <button class="btn btn-info btn-sm m-3" (click)="addToCart(product)" style="width:150px;border-radius:10px;">Download</button>
                     </div>
                 </div>
         </div>

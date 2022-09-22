@@ -15,6 +15,6 @@ img{
     border-radius:10px;
 }
 body{
-    background-color: rgb(218, 38, 131);
-    
+	
+	background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
 }

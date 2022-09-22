@@ -1,0 +1,56 @@
+<body>
+<div class="container" style="color: white;">
+    <!-- <h1>Your bag total is {{totalPrice(cart)|currency:'INR':'symbol':'3.0'}}</h1> -->
+    <hr>
+    <div class="row">
+      <div class="col-sm">
+        <h3>Song Image</h3>
+      </div>
+      <div class="col-sm">
+        <h3>Song Name</h3>
+      </div>
+      <div class="col-sm">
+        <h3>Singer Name</h3>
+      </div>
+      <div class="col-sm">
+        <h3>tracks</h3>
+      </div>
+      <div class="col-sm">
+        <h3>Remove song</h3>
+      </div>
+    </div>
+    <hr>
+    <div class="container" *ngFor="let item of cart">
+      <div class="row">
+        <div class="col-sm">
+          <img src={{item.img}}>
+        </div>
+        <div class="col-sm">
+          <h3> {{item.sname}}</h3>
+        </div>
+        <div class="col-sm">
+          <h3> {{item.siname}}</h3>
+        </div>
+        <div class="col-sm">
+          <h3> {{item.tracks}}</h3>
+        </div>
+        <div class="col-sm">
+          <!-- <div>{{item.totalPrice}}</div> -->
+          <button class="btn btn-danger m-3" (click)="delete(item)"><i class="fa-solid fa-trash"></i></button>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="row">
+      <div class="col-lg-7">
+        <a class="btn btn-dark m-3" (click)="onClick()">Shop More</a>
+        
+      </div>   
+      <div class="col-lg-5">
+        <div>
+          <!-- <h3>Total: {{totalPrice(cart)|currency:'INR'}}</h3> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

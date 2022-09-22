@@ -21,5 +21,13 @@ export class LoginComponent implements OnInit {
     'password': this.password,
   })
   }
+validation()
+{
+  if (this.username=='Ujwala' && this.password=='Ujwala123')
+    return  
+
+}
+  
+  
 
 }

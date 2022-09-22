@@ -11,57 +11,57 @@ import Swal from 'sweetalert2';
 })
 export class MusicextentionComponent implements OnInit {
 
-  constructor(private cartsvc:CartService) { }
+  constructor() { }
 
 
-  cart:Cartitem={
-    tracks:'',
-    sname:'',
-    siname:'',
-    sid:0,
-    img:''
+  // cart:Cartitem={
+  //   tracks:'',
+  //   sname:'',
+  //   siname:'',
+  //   sid:0,
+  //   img:''
     
     
-    // price:0,
+  //   // price:0,
     
-    // quantity:1,
-    // totalPrice:1    
-  }
-  // quantity:number=1;
+  //   // quantity:1,
+  //   // totalPrice:1    
+  // }
+  // // quantity:number=1;
 
-  @Input()product:any
+  // @Input()product:any
 
-  addToCart(product:any){
-    this.cart.tracks=product.tracks;
-    this.cart.sname=product.sname;
-    this.cart.siname=product.siname;
-    this.cart.sid=product.id;
-    this.cart.img=product.img
+  // addToCart(product:any){
+  //   this.cart.tracks=product.tracks;
+  //   this.cart.sname=product.sname;
+  //   this.cart.siname=product.siname;
+  //   this.cart.sid=product.id;
+  //   this.cart.img=product.img
     
-    // this.cart.price=product.price;
+  //   // this.cart.price=product.price;
     
    
     
-    // this.cart.totalPrice=product.totalPrice;
-    // this.cart.quantity=this.quantity;
+  //   // this.cart.totalPrice=product.totalPrice;
+  //   // this.cart.quantity=this.quantity;
     
-    this.cartsvc.addToCart(this.cart);
-    console.log(product.id);
+  //   this.cartsvc.addToCart(this.cart);
+  //   console.log(product.id);
 
-    const Toast = Swal.mixin({
-      toast: true,
-      position: 'top',
-      showConfirmButton: false,
-      timer: 3000,
-      timerProgressBar: true,
-    })
+  //   const Toast = Swal.mixin({
+  //     toast: true,
+  //     position: 'top',
+  //     showConfirmButton: false,
+  //     timer: 3000,
+  //     timerProgressBar: true,
+  //   })
 
-    Toast.fire({
-      icon: 'success',
-      title: 'Item added successfully'
-    })
-    this.cartsvc.getCount();
-  }
+  //   Toast.fire({
+  //     icon: 'success',
+  //     title: 'Item added successfully'
+  //   })
+  //   this.cartsvc.getCount();
+  // }
   
 
 

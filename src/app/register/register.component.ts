@@ -29,7 +29,7 @@ export class RegisterComponent implements OnInit {
   }
   onSubmit()
     {
-      this.router.navigate(['']);
+      this.router.navigate(['Home']);
       console.log(this.myForm);
     }
 }

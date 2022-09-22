@@ -30,6 +30,7 @@ import { LoginComponent } from './login/login.component';
 import { StartloginComponent } from './startlogin/startlogin.component';
 import { StartregisterComponent } from './startregister/startregister.component';
 import { CartItemsComponent } from './cart-items/cart-items.component';
+import { DownloadsComponent } from './downloads/downloads.component';
 
 
 @NgModule({
@@ -58,6 +59,7 @@ import { CartItemsComponent } from './cart-items/cart-items.component';
     StartloginComponent,
     StartregisterComponent,
     CartItemsComponent,
+    DownloadsComponent,
   
    
   ],

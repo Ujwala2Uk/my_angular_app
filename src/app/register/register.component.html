@@ -1,9 +1,76 @@
 <body style="background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);">
+    <br>
+    <h3 style="color: rgb(94, 196, 230); text-align:center">Feedback Form</h3>
+    <p style="color: lightblue; text-align:center">We are valid your feedback</p>
+<br>
+<div style="background-color: wheat; margin-left:20%; margin-right: 20%;">
+<form class="row g-3">
+    <div class="col-md-6">
+      <label for="inputEmail4" class="form-label">First name</label>
+      <input type="text" class="form-control" id="inputEmail4">
+    </div>
+    <div class="col-md-6">
+      <label for="inputPassword4" class="form-label">Last name</label>
+      <input type="text-area" class="form-control" id="inputPassword4">
+    </div>
+    
+    <form>
+        <p>Is Soul Tune is Nice?</p>
+    <input type="radio" id="html" name="fav_language" value="HTML">
+    <label for="html">Yes</label><br>
+    <input type="radio" id="css" name="fav_language" value="CSS">
+    <label for="css">No</label><br>
+    <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+    <label for="javascript">Can't predict</label>
+    </form>
+
+    <form>
+    <p>How would like to rate this Website?</p>
+    <input type="radio" id="html" name="fav_language" value="HTML">
+    <label for="html">10%-30%</label><br>
+    <input type="radio" id="css" name="fav_language" value="CSS">
+    <label for="css">31%-75%</label><br>
+    <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+    <label for="javascript">76%-100%</label>
+    </form>
+
+    <form>
+        <p>How was your experience in this Website?</p>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">Worst</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">avarage</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">Very Good</label>
+    </form>
+        
+
+    <div class="col-12">
+      <label for="inputAddress" class="form-label">If any suggestions please fill it below</label>
+      <textarea rows="5" type="text" class="form-control" id="inputAddress" placeholder=""></textarea>
+    </div>
+    
+   
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck">
+        <label class="form-check-label" for="gridCheck">
+          Send to Admin
+        </label>
+      </div>
+    </div>
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary" (click)="onSubmit()" >Submit</button>
+    </div>
+  </form>
+  <br>
+</div>
 <br>
 <br>
 <br>
 
-<form [formGroup]="myForm" novalidate>
+<!--Registration Form with Validation-->
+<!-- <form [formGroup]="myForm" novalidate>
     <fieldset class="reg">
     <legend style="color:rgb(47, 6, 121);text-align: center; ">Registration Details</legend>
     <div class="form-group">
@@ -49,7 +116,7 @@
                 </form>
             
                 <br>
-                <br>
+                <br> -->
 </body>
                 <!-- <div class="form-group">
                     <div class="alert alert-info">

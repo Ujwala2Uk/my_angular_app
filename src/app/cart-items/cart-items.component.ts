@@ -55,7 +55,7 @@ export class CartItemsComponent implements OnInit {
     this.ngOnInit();
   }
   onClick(){
-    this.router.navigate(['Music'])
+    this.router.navigate(['Downloads'])
   }
 
   ngOnInit(): void {

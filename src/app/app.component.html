@@ -85,7 +85,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
-          <button type="button" class="btn btn-primary"data-bs-dismiss="modal">Yes</button>
+          <button type="button" class="btn btn-primary"data-bs-dismiss="modal" >Yes</button>
         </div>
       </div>  
     </div>
@@ -118,8 +118,12 @@
             <a class="nav-link active "*ngIf="auth" routerLink="Music" >Music</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active "*ngIf="auth" routerLink="Admin" >Admin</a>
+            <a class="nav-link active "*ngIf="auth" routerLink="Downloads" >Songs for Downloads</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link active "*ngIf="auth" routerLink="Login" >Admin</a>
+          </li>
+          
           <li class="nav-item">
           <a class="nav-link" routerLink="Startregister" *ngIf="!auth">Register</a>
         </li>
@@ -129,10 +133,7 @@
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <button id="reg" type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="" routerLink="Register">
-                Registration
-              </button>
-              <button id="reg" type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="" routerLink="Login">
-                Sign in
+                Feedback
               </button>
               <button id="reg" type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#reg3">
                 Sign out
@@ -156,5 +157,4 @@
   </nav>
 <!-- binding -->
 <app-find [product]="productentered"></app-find>
-
 <router-outlet></router-outlet>

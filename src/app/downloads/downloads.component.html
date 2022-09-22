@@ -1,0 +1,49 @@
+
+<body>
+    <br>
+<h1 style="color:aqua;text-align:center">Download the songs </h1>
+<h4 style="color:rgb(41, 147, 147);text-align:center"> Enjoy it in offline</h4>
+    <div *ngFor="let p of downloads" style="border:none;">
+        <div class="row" style="">
+            <!--1st column--> 
+            <div class="col col-lg-2">
+                <!--Property Binding-->
+                <!-- <img [src]="p.img" class="prodimg"> -->
+                <!-- <app-allsong></app-allsong> -->
+            </div>
+            <div class="card col-lg-8" style="border:none;	background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+            ">
+                <div class="card-body col-lg-12">
+                    <div class="row" style="margin-top:10px;border-style:solid;border-color:black;border-radius:15px;background-color: lightpink; ">
+                        <div class="col-lg-4">
+                            <!--Property Binding-->
+                            <img [src]="p.img">
+                        </div>
+                        <div class="col-lg-8" style="margin-top:20px; text-align: left;">
+                            <!--Interpolation Binding-->
+                            <div>
+                                Song Name: {{p.sname | uppercase}}
+                                <hr>
+                                Movie Name: {{p.tracks}}
+                                <br>
+                                Singer: {{p.siname}}
+                                <hr>
+                                <button class="btn btn-info btn-sm m-3" (click)="addToCart(product)" style="width:150px;border-radius:10px;">Download</button>
+                                <!-- <td><audio controls muted>
+                                    <source src="assets/images/Song1.mp3" type="audio/mp3">
+                                </audio></td> -->
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+           <!--2nd column-->
+            <div class="col col-lg-5">
+                <!--Property Binding-->
+                <!-- <img [src]="p.img" class="prodimg"> -->
+            </div>
+           
+        </div>
+    </div>
+    </body>

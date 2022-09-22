@@ -26,7 +26,7 @@ export class AppComponent {
 
 
   constructor(private authService:UserService,private cartSvc:CartService) { }
-  auth:boolean=false;
+  auth:boolean=true;
   cartCount: number=0;
 
  //parent child component method 
@@ -50,6 +50,9 @@ export class AppComponent {
         this.auth = data;
       }
     );
+
+
+
     this.cartSvc.getCartItems().subscribe (     
       (response) =>
        {        

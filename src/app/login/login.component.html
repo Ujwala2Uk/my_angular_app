@@ -31,6 +31,7 @@
           <div class="mt-5">
           <div class="form-group">
               <div style="text-align:center ;color: red;">
+                <label style="color: white;">Admin Username</label>
               <input type="text" class="form-control" name="username" formControlName="username" placeholder="User Name">
               <label class="error ng-binding" *ngIf="submitted && f['username'].errors?.['required']">Email is required</label>
               <label class="error ng-binding" *ngIf="submitted && f['username'].errors?.['username']">Email must be a valid email address</label>
@@ -39,6 +40,7 @@
           <br>
           <div class="form-group">
               <div style="text-align:center ;color: red;">
+                <label style="color: white;">Admin Password</label>
               <input type="password" class="form-control" name="password" formControlName="password" placeholder="Password">
               <label class="error ng-binding" *ngIf="submitted && f['password'].errors?.['required']">Password is required</label>
               <label class="error ng-binding" *ngIf="submitted && f['password'].errors?.['minlength']">Password must be at least 6 characters</label>

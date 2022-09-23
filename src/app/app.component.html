@@ -19,6 +19,23 @@
   </div>
 </div>
 
+<!--Modol for Cart button-->
+<div class="modal fade" id="alert" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div  class="modal-content" style="background-color:lightgreen">
+      <div class="modal-header">
+        <h5 class="modal-title" style="color:blueviolet;font-weight: bold; font-size: large; font-style: oblique; ">Wow!!!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p style="color: darkmagenta; font-weight: bold; font-size: large; font-style: oblique;">You have {{cartCount}} downloaded Song</p>
+      </div>
+      
+       
+    </div>
+  </div>
+</div>
+
 <!-- For Registarion -->
 <div class="modal fade" id="reg1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -144,14 +161,14 @@
           
         </ul>
         <form class="d-flex">
-          <button routerLink='CartItems' style="height:5px;border:none;" *ngIf="auth">
+          <button routerLink='CartItems' style="height:5px;border:none;" *ngIf="auth" data-bs-target="#alert" id="reg" type="button" class="btn btn-dark" data-bs-toggle="modal" >
             <span class="fa-solid fa-download" style="font-size:16px;color:white"><sup class="text-warning" style="font-size:10px;margin-left: 3px;;">{{cartCount}}</sup></span>
           </button>
           <!-- parent child component method  -->
           <input class="form-control me-2" #productname type="search" placeholder="Fvt name" aria-label="Search">
           <button class="btn btn-outline-success" type="submit" (click)="search_product(productname.value);productname.value=''" style="border-radius:10px;">Find</button>
         </form>
-        <a class="btn btn-outline-success" type="submit" style="border-radius:10px;color:black;" routerLink="Startlogin"*ngIf="auth">Logout</a>
+        <a class="btn btn-outline-success" type="submit" style="border-radius:10px;color:black;" routerLink="Startlogin"*ngIf="auth" >Logout</a>
       </div>
     </div>
   </nav>

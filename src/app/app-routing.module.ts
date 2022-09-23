@@ -19,6 +19,7 @@ import { DownloadsComponent } from './downloads/downloads.component';
 
 const routes: Routes = [
   // {path: '',redirectTo:'products', pathMatch:'full'},
+  {path:'',component:HomeComponent},
   {path:'Home' , component:HomeComponent },
   {path:'Melody' , component:MelodyComponent },
   {path:'Dance' , component:DanceComponent },

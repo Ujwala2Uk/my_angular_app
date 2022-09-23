@@ -28,7 +28,12 @@
                                 <br>
                                 Singer: {{p.siname}}
                                 <hr>
-                                <button class="btn btn-info btn-sm m-3" (click)="addToCart(product)" style="width:150px;border-radius:10px;">Download</button>
+                                Downloading Price: {{p.price | currency : 'INR'}} per 1MB
+                                <br>
+                               
+                                
+                                
+                                <button class="btn btn-info btn-sm m-3" (click)="addToCart(p)" style="width:150px;border-radius:10px; float: right;">Download</button>
                                 <!-- <td><audio controls muted>
                                     <source src="assets/images/Song1.mp3" type="audio/mp3">
                                 </audio></td> -->

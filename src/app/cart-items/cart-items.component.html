@@ -13,8 +13,14 @@
         <h3>Singer Name</h3>
       </div>
       <div class="col-sm">
-        <h3>tracks</h3>
+        <h3>Film Name</h3>
       </div>
+      <div class="col-sm">
+        <h3>Price for downloading</h3>
+      </div>
+      <!-- <div class="col-sm">
+        <h3>Downloading rate(MB)</h3>
+      </div> -->
       <div class="col-sm">
         <h3>Remove song</h3>
       </div>
@@ -35,7 +41,13 @@
           <h3> {{item.tracks}}</h3>
         </div>
         <div class="col-sm">
-          <!-- <div>{{item.totalPrice}}</div> -->
+          <h3> {{item.price}}</h3>
+        </div>
+        <!-- <div class="col-sm">
+          <h3> {{item.quantity}}</h3>
+        </div> -->
+        <div class="col-sm">
+          <div>{{item.totalPrice}}</div>
           <button class="btn btn-danger m-3" (click)="delete(item)"><i class="fa-solid fa-trash"></i></button>
         </div>
       </div>
@@ -48,7 +60,7 @@
       </div>   
       <div class="col-lg-5">
         <div>
-          <!-- <h3>Total: {{totalPrice(cart)|currency:'INR'}}</h3> -->
+          <h3>Total: {{totalPrice(cart)|currency:'INR'}}</h3>
         </div>
       </div>
     </div>

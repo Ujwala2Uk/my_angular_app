@@ -19,16 +19,22 @@ export class DownloadsComponent implements OnInit {
     sname:'',
     siname:'',
     sid:0,
-    img:''
+    img:'',
+    price:0,
+    quantity:1,
+    totalPrice:1  
   }
-  @Input()product:any
-
+  
+  quantity:number=1;
   addToCart(product:any){
     this.cart.tracks=product.tracks;
     this.cart.sname=product.sname;
     this.cart.siname=product.siname;
     this.cart.sid=product.id;
-    this.cart.img=product.img
+    this.cart.img=product.img;
+    this.cart.price=product.price;
+    this.cart.quantity=this.quantity;
+    this.cart.totalPrice=product.totalPrice;
 
     this.cartsvc.addToCart(this.cart);
     console.log(product.id);
@@ -43,10 +49,14 @@ export class DownloadsComponent implements OnInit {
 
     Toast.fire({
       icon: 'success',
-      title: 'Item added successfully'
+      title: 'Song Downloaded successfully'
     })
     this.cartsvc.getCount();
   }
+
+  @Input()product:any
+
+
   downloads: any=(dwn as any ).default
   @Input()song:any
   ngOnInit(): void {

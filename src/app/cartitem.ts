@@ -4,6 +4,9 @@ export class Cartitem {
     siname:string|undefined;
     sid:number|any;
     img:string|undefined;
+    price:number|any;
+    quantity:number|any;
+    totalPrice:number|any;
     // price:number|any;
     // quantity:number|any;
     // totalPrice:number|any;

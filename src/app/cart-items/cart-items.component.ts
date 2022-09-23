@@ -17,24 +17,27 @@ export class CartItemsComponent implements OnInit {
     sname:'',
     siname:'',
     tracks:'',
-    // price:0,
     img:'',
-    // quantity:1,
-    // totalPrice:1    
+    price:0,
+    quantity:1,
+    totalPrice:1    
   }
 
   cartData: any = [];
-  // totalprice: number = 0;
-  // quantity = 1;
+  totalprice: number = 0;
+  quantity = 1;
+  
+  totalPrice(data: any) {
+    debugger
+    const intialValue = 0;
+    this.cartData = data
+    const a = this.cartData.reduce((sum: any, item: any) => sum + (item.price * item.quantity), intialValue);
+    return a;
+  }
+ 
 
-  // totalPrice(data: any) {
-  //   debugger
-  //   const intialValue = 0;
-  //   this.cartData = data
-  //   const a = this.cartData.reduce((sum: any, item: any) => sum + (item.price * item.quantity), intialValue);
-  //   return a;
-  // }
-  cart: Cartitem[] = [];
+
+  
 
   delete(deleteItem: Cartitem) {
     this.cartSvc.removeItemFromCart(deleteItem).subscribe(
@@ -50,13 +53,15 @@ export class CartItemsComponent implements OnInit {
 
     Toast.fire({
       icon: 'error',
-      title: 'Item deleted successfully'
+      title: 'Song deleted successfully'
     })
     this.ngOnInit();
   }
   onClick(){
     this.router.navigate(['Downloads'])
   }
+
+  cart: Cartitem[] = [];
 
   ngOnInit(): void {
     this.cartSvc.getCartItems().subscribe(

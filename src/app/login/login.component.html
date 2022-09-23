@@ -18,45 +18,42 @@
         </div>
       </div> -->
 
+      
+<br>
+<br>
+<br>
+<div class="login-form">
+  <div class="signup">
+      <form class="mt-5" [formGroup]="adminForm" (ngSubmit)="admin()">
+          <h3 class="text-center secondary ms-mb-m main-heading ng-binding" style="color: white;">Login with SOUL TUNE</h3>
+          <br>
+          <div class="mt-5">
+          <div class="form-group">
+              <div style="text-align:center ;color: red;">
+              <input type="text" class="form-control" name="username" formControlName="username" placeholder="User Name">
+              <label class="error ng-binding" *ngIf="submitted && f['username'].errors?.['required']">Email is required</label>
+              <label class="error ng-binding" *ngIf="submitted && f['username'].errors?.['username']">Email must be a valid email address</label>
+          </div>
+          </div>
+          <br>
+          <div class="form-group">
+              <div style="text-align:center ;color: red;">
+              <input type="password" class="form-control" name="password" formControlName="password" placeholder="Password">
+              <label class="error ng-binding" *ngIf="submitted && f['password'].errors?.['required']">Password is required</label>
+              <label class="error ng-binding" *ngIf="submitted && f['password'].errors?.['minlength']">Password must be at least 6 characters</label>
+          </div>
+          </div>
+          <br>
+          <div style="text-align: center;color: azure;">
+          <button type="submit" class="btn btn-secondary" href="">Login</button>
+          </div>
+          <br>
+          
+          </div>
+      </form>
+  </div>
+  </div>
 
-<br>
-<br>
-<br>
-<form [formGroup]="myForm" novalidate>
-    <fieldset class="reg">
-    <legend style="color:rgb(47, 6, 121);text-align: center; ">Sign In</legend>
-    <div class="form-group">
-        <label>User Name</label>
-        <input type="text" class="form-control" placeholder="Enter username" formControlName="username"
-            [ngClass]="{'is-invalid':username.errors && (username.touched||username.dirty),'is-valid':username.valid}">
-            <span class="invalid-feedback">
-                <strong *ngIf="username.errors?.required">Name is Required</strong>
-                <strong *ngIf="username.errors?.pattern">Only Alphabets allowed(A-Z and a-z)</strong>
-                <strong *ngIf="username.errors?.minlength">Min length is 6 characters</strong>
-                <strong *ngIf="username.errors?.maxlength">Max length is 16 characters</strong>
-            </span>
-        </div>
-        <div class="form-group">
-            <label>Password</label>
-            <input type="password" class="form-control" placeholder="Enter Password" formControlName="password"
-                [ngClass]="{'is-invalid':password.errors && (password.touched||password.dirty),'is-valid':password.valid}">
-
-                <span class="invalid-feedback">
-                    <strong *ngIf="password.errors?.required">Password is Required</strong>
-                    <strong *ngIf="password.errors?.pattern">Pattern does not match</strong>
-                </span>
-            </div>
-            <br>
-            
-            <!-- <button  type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#admin" href="Admin">
-                Sign in
-               </button>&nbsp; -->
-               <div style="text-align: center;">
-               <a type="button" class="btn btn-primary " href="Admin">Sing in</a>
-              </div>
-            <br>
-        </fieldset>
-        </form>
         <br>
         <br>
         <br>

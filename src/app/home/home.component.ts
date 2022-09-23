@@ -33,27 +33,27 @@ export class HomeComponent implements OnInit {
 
     songs:any[ ]=[
       {
-        popular_songname1:"Popular songs "
+        popular_songname1:"Melody songs "
       },
       {
-        popular_songname1:"Trending songs "
+        popular_songname1:"Dance songs "
       },
       {
-        popular_songname1:"My top tracks"
+        popular_songname1:"Classical songs"
       },
     ]
 
     song_details : any[] =[
      
       {
-        tracks:"Popular songs",
+        tracks:"Melody songs",
         sname: "Kesariya",
         siname: "Pallavi",
         sid: 3
       },
      
       {
-        tracks:"Popular songs",
+        tracks:"Melody songs",
         sname: "Jai shri ram",
         siname: "Shankar",
         sid: 5
@@ -62,14 +62,14 @@ export class HomeComponent implements OnInit {
    
   
       {
-        tracks:"Trending songs",
+        tracks:"Dance songs",
         sname: "Pagal iravai",
         siname: "Pranav",
         sid: 9
       },
      
       {
-        tracks:"Popular songs",
+        tracks:"Melody songs",
         sname: "Sojugada",
         siname: "Ananya",
         sid: 2
@@ -77,14 +77,14 @@ export class HomeComponent implements OnInit {
   
     
       {
-        tracks:"My top tracks",
+        tracks:"Classical songs",
         sname: "Zara Zara",
         siname: "Driithi",
         sid: 13
       },
     
       {
-        tracks:"My top tracks",
+        tracks:"Classical songs",
         sname: "Munjane Manjalli",
         siname: "Raghu Dixit",
         sid: 14

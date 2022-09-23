@@ -91,18 +91,29 @@
 <!-- For Sign out -->
 <div class="modal fade" id="reg3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
-    <div class="modal-content">
+    <div class="modal-content" style="background-color:lightseagreen">
       <div class="modal-body">
         <div class="modal-header">
-          <h5 class="modal-title">Sign out</h5>
+          <h5 class="modal-title">Rate our Soul Tunes</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <p>Are u sure!!!</p>
+          <form>
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html">1 (Not satisfied)</label><br>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">2 (satisfied)</label><br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">3 (Average)</label><br>
+            <input type="radio" id="Typescript" name="fav_language" value="TypeScript">
+            <label for="javascript">4 (Good)</label><br>
+            <input type="radio" id="Python" name="fav_language" value="Python">
+            <label for="javascript">5 (Very Good)</label><br>
+        </form>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
-          <button type="button" class="btn btn-primary"data-bs-dismiss="modal" >Yes</button>
+          <button type="button" class="btn btn-primary"data-bs-dismiss="modal" routerLink="Home">Submit</button>
         </div>
       </div>  
     </div>
@@ -153,7 +164,7 @@
                 Feedback
               </button>
               <button id="reg" type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#reg3">
-                Sign out
+                Rating
               </button>
             </ul>
           </li>

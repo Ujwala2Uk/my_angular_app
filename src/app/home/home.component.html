@@ -47,7 +47,7 @@
   <div class="card text-white bg-info mb-3">
     <img id="c1_img" src="assets/images/popular1.jpg" class="card-img-top" alt="...">
     <div class="card-body">
-      <h5 class="card-title" style="text-align:center">Popular Songs</h5>
+      <h5 class="card-title" style="text-align:center">Melody Songs</h5>
       <table class="table table-borderless" >
         <thead>
           <tr>
@@ -98,7 +98,7 @@
   <div class="card text-white bg-secondary mb-3">
     <img id="c1_img" src="assets/images/trend1.jpg" class="card-img-top" alt="...">
     <div class="card-body">
-      <h5 class="card-title" style="text-align:center">Trending songs</h5>
+      <h5 class="card-title" style="text-align:center">Dance songs</h5>
       <table class="table table-borderless" >
         <thead>
           <tr>
@@ -150,7 +150,7 @@
     <img id="c1_img" src="assets/images/my1.jpg" class="card-img-top" alt="...">
   
     <div class="card-body">
-      <h5 class="card-title" style="text-align:center;font-weight:bold;">My top tracks</h5>
+      <h5 class="card-title" style="text-align:center;font-weight:bold;">Classical Songs</h5>
       <table class="table table-borderless" >
         <thead>
           <tr>
@@ -206,17 +206,17 @@
   <button (click)="hide()">List of Recently played songs</button>
   <ul *ngIf="isVisble">
   <ul  *ngFor="let sdetails of song_details" [ngSwitch]="sdetails.tracks" type="none" >
-  <li *ngSwitchCase="'My top tracks'" class="text-warning">
+  <li *ngSwitchCase="'Melody songs'" class="text-info">
     {{sdetails.tracks}}-->{{sdetails.sname}} singer : {{sdetails.siname}}
   </li>
 </ul >
 <ul *ngFor="let sdetails of song_details" [ngSwitch]="sdetails.tracks" type="none">
-  <li *ngSwitchCase="'Popular songs'" class="text-info">
+  <li *ngSwitchCase="'Dance songs'" class="text-secondary">
     {{sdetails.tracks}}-->{{sdetails.sname}} singer : {{sdetails.siname}}
   </li>
 </ul>
 <ul *ngFor="let sdetails of song_details" [ngSwitch]="sdetails.tracks" type="none">
-  <li *ngSwitchCase="'Trending songs'" class="text-secondary">
+  <li *ngSwitchCase="'Classical songs'" class="text-warning">
     {{sdetails.tracks}}-->{{sdetails.sname}} singer : {{sdetails.siname}}
   </li>
 </ul>

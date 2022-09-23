@@ -24,94 +24,94 @@ get soname( )
 
 song_details : any[] =[
   {
-    tracks:"Popular songs",
+    tracks:"Melody songs",
     sname: "Ohm shivam",
     siname: "SPB",
     sid: 1
   },
   {
-    tracks:"Popular songs",
+    tracks:"Melody songs",
     sname: "Sojugada",
     siname: "Ananya",
     sid: 2
   },
   {
-    tracks:"Popular songs",
+    tracks:"Melody songs",
     sname: "Kesariya",
     siname: "Pallavi",
     sid: 3
   },
   {
-    tracks:"Popular songs",
+    tracks:"Melody songs",
     sname: "Calmdown",
     siname: "Shyam",
     sid: 4
   },
   {
-    tracks:"Popular songs",
+    tracks:"Melody songs",
     sname: "Jai shri ram",
     siname: "Shankar",
     sid: 5
   },
   {
-    tracks:"Trending songs",
+    tracks:"Dance songs",
     sname: "Mehabooba",
     siname: "Ravi",
     sid: 1
   },
   {
-    tracks:"Trending songs",
+    tracks:"Dance songs",
     sname: "Fitoor",
     siname: "Arijith",
     sid: 2
   },
   {
-    tracks:"Trending songs",
+    tracks:"Dance songs",
     sname: "Ninne thanaka",
     siname: "Sanjith",
     sid: 3
   },
   {
-    tracks:"Trending songs",
+    tracks:"Dance songs",
     sname: "Pagal iravai",
     siname: "Pranav",
     sid: 4
   },
   {
-    tracks:"Trending songs",
+    tracks:"Dance songs",
     sname: "Jagave neenu",
     siname: "Arijith",
     sid: 5
   },
   {
-    tracks:"My top tracks",
+    tracks:"Classical songs",
     sname: "Arabic kuthu",
     siname: "Anirudh",
     sid: 1
   },
   {
-    tracks:"My top tracks",
+    tracks:"Classical songs",
     sname: "Darshana",
     siname: "Hesham",
     sid: 2
   },
 
   {
-    tracks:"My top tracks",
+    tracks:"Classical songs",
     sname: "Zara Zara",
     siname: "Driithi",
     sid: 3
   },
 
   {
-    tracks:"My top tracks",
+    tracks:"Classical songs",
     sname: "Munjane Manjalli",
     siname: "Raghu Dixit",
     sid: 4
   },
 
   {
-    tracks:"My top tracks",
+    tracks:"Classical songs",
     sname: "Patashala",
     siname: "Vijay",
     sid: 5

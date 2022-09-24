@@ -26,7 +26,7 @@ export class AppComponent {
 
 
   constructor(private authService:UserService,private cartSvc:CartService) { }
-  auth:boolean=true;
+  auth:boolean=false;
   cartCount: number=0;
 
  //parent child component method 
